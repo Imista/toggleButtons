@@ -10,10 +10,15 @@
 
 //Form #2
 
-const spaces = document.querySelectorAll(".tbContent_button");
+const allButtons = document.querySelectorAll("button");
+const allSpaces = document.querySelectorAll(".tbContent_button");
 
-spaces.forEach(x => {
-    x.addEventListener("click", () => {
-        x.classList.toggle("active");
+for (let i = 0; i < allButtons.length; i++) {
+
+    const space = allSpaces[i];
+    const button = allButtons[i];
+
+    button.addEventListener("click", () => {
+       space.classList.toggle("active");
     });
-})
+}
