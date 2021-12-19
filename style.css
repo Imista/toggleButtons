@@ -58,12 +58,13 @@ main{
 .tbContent_button_info{
     overflow: hidden;
     max-height: 0;
-    transition: all 1.4s ease;
+    transition: all 1.4s;
 }
-.disableButton img{
+/*Active*/
+.active .tbContent_button_head img{
     /*Transform*/
     transform: rotate(360deg);
 }
-.activateText{
+.active .tbContent_button_info{
     max-height: 300px;
 }

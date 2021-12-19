@@ -1,11 +1,19 @@
-//Form #1
+// //Form #1
 
-const buttonPressed = () =>{
-    //Html objects
-    const button = document.querySelector(".tbContent_button_head");
-    const text = document.querySelector(".tbContent_button_info");
+// const buttonPressed = () =>{
+//     //Html objects
+//     const div = document.querySelector(".tbContent_button")
 
-    //Actions
-    button.classList.toggle("disableButton");
-    text.classList.toggle("activateText");
-}
+//     //Actions
+//     div.classList.toggle("active");
+// }
+
+//Form #2
+
+const spaces = document.querySelectorAll(".tbContent_button");
+
+spaces.forEach(x => {
+    x.addEventListener("click", () => {
+        x.classList.toggle("active");
+    });
+})
