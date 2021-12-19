@@ -53,15 +53,17 @@ main{
     width: 16px;
     cursor: pointer;
     /*Animation*/
-    transition: all 1s cubic-bezier(0.25, 1, 0.5, 1);
+    transition: all 1.4s ease;
 }
 .tbContent_button_info{
-    transition: all 1s cubic-bezier(0.25, 1, 0.5, 1);
+    overflow: hidden;
+    max-height: 0;
+    transition: all 1.4s ease;
 }
 .disableButton img{
     /*Transform*/
     transform: rotate(360deg);
 }
-.disableText{
-    display: none;
+.activateText{
+    max-height: 300px;
 }
