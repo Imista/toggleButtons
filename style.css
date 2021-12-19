@@ -56,9 +56,20 @@ main{
     transition: all 1.4s ease;
 }
 .tbContent_button_info{
+    /* Display */
+    display: flex;
+    align-items: center;
+    /* Text */
     overflow: hidden;
     max-height: 0;
     transition: all 1.4s;
+}
+.tbContent_button_info_img{
+    width: 120px;
+    margin-right: 12px;
+}
+.tbContent_button_info_text{
+    line-height: 32px;
 }
 /*Active*/
 .active .tbContent_button_head img{
