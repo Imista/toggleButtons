@@ -68,3 +68,14 @@ main{
 .active .tbContent_button_info{
     max-height: 300px;
 }
+
+/*Movil version*/
+@media (max-width: 700px){
+    .tbContent{
+        width: 80%;
+    }
+    .tbContent_button{
+        box-sizing: border-box;
+        width: 100%;
+    }
+}
